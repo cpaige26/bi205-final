@@ -1,0 +1,230 @@
+<html>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('biblebackground.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;
+        }
+        body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: inherit;
+    background-size: inherit;
+    filter: blur(15px); /* Adjust the blur amount as needed */
+    z-index: -1;
+}
+    </style>
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a class="active" a href="biblestoryline.html">Bible Storyline</a>
+        <a href="biblicalworldview.html">Biblical Worldview</a>
+        <a href="casestudy.html">Case Study</a>
+        <a href="Reflection.html">Reflection</a>
+        <a href="podcast.html">Podcast</a>
+    </div>
+    <br>
+    <body>
+        <div class="container">
+            <label for="Chart" style="font-size: 20px; color: white;">Explore Further</label>
+            <select id="Chart">
+                <option value="biblestoryline.html">Bible Storyline</option>
+                <option value="pentateuch.html">Pentateuch</option>
+                <option value="HistoricalBooks.html">Historical Books</option>
+                <option value="wisdomlit.html">Wisdom Literature</option>
+                <option value="propheticbooks.html">Prophetic Books</option>
+                <option value="gospels.html">Gospels</option>
+                <option value="acts.html">Acts</option>
+                <option value="epistles.html">Epistles</option>
+                <option value="revelation.html">Revelation</option>
+            </select>
+            <button id="goButton" style="font-size: 15px;">Go</button>
+        </div>
+            <script>
+              const dropdown = document.getElementById("Chart");
+              const goButton = document.getElementById("goButton");
+      
+              goButton.addEventListener("click", function() {
+                  const selectedValue = dropdown.value;
+                  if (selectedValue !== "") {
+                      window.location.href = selectedValue;
+                  }
+              });
+            </script>
+              <br>
+        <div class="epistleschart">
+        <table border="5">
+            <th align="center"; colspan="5">Epistles</th>
+            <tr align="center">
+                <td>Book</td>
+                <td>Key Chapters</td>
+                <td>Main Characters</td>
+                <td>Main Events</td>
+                <td>Key Themes</td>
+            </tr>
+            <tr align="center">
+                <td>Romans</td>
+                <td>1-16</td>
+                <td>Paul, Romans</td>
+                <td>Gospel reveals God’s righteousness</td>
+                <td>Because we sin, we cannot save ourselves we need God. God’s salvation is for everyone</td>
+            </tr>
+            <tr align="center">
+                <td>1st Corinthians</td>
+                <td>2, 4-5, 7, 9-10, 15</td>
+                <td>Paul, Timothy</td>
+                <td>Paul discusses various aspects of life and sin that hurt the church and its members</td>
+                <td>Church Discipline, Unity Among Believers, Proper Worship</td>
+            </tr>
+            <tr align="center">
+                <td>2nd Corinthians</td>
+                <td>2-5, 10-13</td>
+                <td>Paul, Timothy, and Titus</td>
+                <td>Paul writes to the Corinthians defending his faith and helping the Corinthians understand that God saves all who believe in him</td>
+                <td>Suffering is part of Christian Service</td>
+            </tr>
+            <tr align="center">
+                <td>Galatians</td>
+                <td>2, 5-6</td>
+                <td>Paul</td>
+                <td>Paul is accepted by the other Apostles; Explains Christ has set us free</td>
+                <td>Keeping the law does not save us</td>
+            </tr>
+            <tr align="center">
+                <td>Ephesians</td>
+                <td>1-6</td>
+                <td>Paul and Saints in Ephesus</td>
+                <td>Paul teaching about one Christ, the Unity of Christians, and the Mystery of the Gospel</td>
+                <td>People of all nations are united through Christ; Christians should live holy lives and glorifying God in all we do</td>
+            </tr>
+            <tr align="center">
+                <td>Philippians</td>
+                <td>2-4</td>
+                <td>Paul and Timothy</td>
+                <td>Christ shows examples of humility</td>
+                <td>Jesus Christ is the ultimate example for believers</td>
+            </tr>
+            <tr align="center">
+                <td>Colossians</td>
+                <td>1-13</td>
+                <td>Paul and Timothy</td>
+                <td>Paul ministers to the church</td>
+                <td>Jesus Christ is pre-eminent over all of creation</td>
+            </tr>
+            <tr align="center">
+                <td>1st Thessalonians</td>
+                <td>4-5</td>
+                <td>Paul, Silvanus, and Timothy</td>
+                <td>N/A</td>
+                <td>Hope and Sanctification</td>
+            </tr>
+            <tr align="center">
+                <td>2nd Thessalonians</td>
+                <td>1-3</td>
+                <td>Paul, Silvanus, and Timothy</td>
+                <td>N/A</td>
+                <td>Persecution, vengeance, and eternal destruction</td>
+            </tr>
+            <tr align="center">
+                <td>1st Timothy</td>
+                <td>2, 4, 5-6</td>
+                <td>Paul and Timothy</td>
+                <td>N/A</td>
+                <td>Christ, Ethics</td>
+            </tr>
+            <tr align="center">
+                <td>2nd Timothy</td>
+                <td>2, 4</td>
+                <td>Paul and Timothy</td>
+                <td>N/A</td>
+                <td>salvation</td>
+            </tr>
+            <tr align="center">
+                <td>Titus</td>
+                <td>2-3</td>
+                <td>Paul, Titus</td>
+                <td>N/A</td>
+                <td>The church's survival depends on having godly men serve as pastors and elders</td>
+            </tr>
+            <tr align="center">
+                <td>Philemon</td>
+                <td>1</td>
+                <td>Paul, Timothy, Apphia, Archippus</td>
+                <td>N/A</td>
+                <td>Grace and Forgiveness</td>
+            </tr>
+            <tr align="center">
+                <td>Hebrews</td>
+                <td>1-3, 8, 10-12</td>
+                <td>Timothy and Hebrews</td>
+                <td>N/A</td>
+                <td>Jesus Christ is Superior</td>
+            </tr>
+            <tr align="center">
+                <td>James</td>
+                <td>2-4</td>
+                <td>James and the 12 Tribes</td>
+                <td>N/A</td>
+                <td>Faith and Works</td>
+            </tr>
+            <tr align="center">
+                <td>1st Peter</td>
+                <td>2, 4-5</td>
+                <td>Peter</td>
+                <td>N/A</td>
+                <td>Good Works</td>
+            </tr>
+            <tr align="center">
+                <td>2nd Peter</td>
+                <td>2-3</td>
+                <td>Peter</td>
+                <td>N/A</td>
+                <td>Character and Development</td>
+            </tr>
+            <tr align="center">
+                <td>1st John</td>
+                <td>2-5</td>
+                <td>John</td>
+                <td>N/A</td>
+                <td>Stresses the Seriousness of Sin</td>
+            </tr>
+            <tr align="center">
+                <td>2nd John</td>
+                <td>1</td>
+                <td>John</td>
+                <td>N/A</td>
+                <td>Incarnation</td>
+            </tr>
+            <tr align="center">
+                <td>3rd John</td>
+                <td>1</td>
+                <td>John</td>
+                <td>N/A</td>
+                <td>Authority in the Church</td>
+            </tr>
+            <tr align="center">
+                <td>Jude</td>
+                <td>1</td>
+                <td>Jude</td>
+                <td>N/A</td>
+                <td>Consequences of false doctrine</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Back</td>
+                <td colspan="4">The Epistle books relate back to the rest of the Bible because the Apostles are writing to other churches throughout the world and teaching through writing how their actions need to be God-like and the dangers of not following God through faith in his son Jesus Christ. The letters are all about how the churches need to act like Jesus because he is the ultimate example of what a believer is</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Foward</td>
+                <td colspan="4">Looking forward to the last book of the Bible, Revelation. The Epistles are showing churches how to act and believe in God so that when the end comes, all who believe in God will meet in heaven</td>
+            </tr>
+            <tr align="center">
+                <td>Sources</td>
+                <td colspan="4">ESV Bible, Learnreligions.com, enterthebible.org</td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>

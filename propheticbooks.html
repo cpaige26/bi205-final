@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('prophet.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;
+        }
+        body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 150vh;
+    background-image: inherit;
+    background-size: inherit;
+    /*filter: blur(15px); /* Adjust the blur amount as needed */
+    z-index: -1;
+    filter: brightness(.2);
+}
+    </style>
+
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a class="active" a href="biblestoryline.html">Bible Storyline</a>
+        <a href="biblicalworldview.html">Biblical Worldview</a>
+        <a href="casestudy.html">Case Study</a>
+        <a href="Reflection.html">Reflection</a>
+        <a href="podcast.html">Podcast</a>
+    </div>
+    
+        <body>
+            <br>
+            <div class="container">
+                <label for="Chart" style="font-size: 20px; color: white;">Explore Further</label>
+                <select id="Chart">
+                    <option value="biblestoryline.html">Bible Storyline</option>
+                    <option value="pentateuch.html">Pentateuch</option>
+                    <option value="HistoricalBooks.html">Historical Books</option>
+                    <option value="wisdomlit.html">Wisdom Literature</option>
+                    <option value="propheticbooks.html">Prophetic Books</option>
+                    <option value="gospels.html">Gospels</option>
+                    <option value="acts.html">Acts</option>
+                    <option value="epistles.html">Epistles</option>
+                    <option value="revelation.html">Revelation</option>
+                </select>
+                <button id="goButton" style="font-size: 15px;">Go</button>
+                </div>
+                <script>
+                  const dropdown = document.getElementById("Chart");
+                  const goButton = document.getElementById("goButton");
+          
+                  goButton.addEventListener("click", function() {
+                      const selectedValue = dropdown.value;
+                      if (selectedValue !== "") {
+                          window.location.href = selectedValue;
+                      }
+                  });
+                </script>
+          <br>
+          <div class="prophettext">
+        <table border="5">
+            <th align="center"; colspan="5">Prophetic Books</th>
+            <tr align="center">
+                <td>Book</td>
+                <td>Key Chapters</td>
+                <td>Main Characters</td>
+                <td>Main Events</td>
+                <td>Key Themes</td>
+            </tr>
+            <tr align="center">
+                <td>Isaiah</td>
+                <td>1-3, 6, 9-10, 27, 34, 41, 43-44, 46-48, 57, 59</td>
+                <td>Isaiah and his sons, Shear-Jashub and Maher-Shalal-Hash-Baz</td>
+                <td>Uzziah dies; Isaiah’s call, Assyrian invasion, Sennacherib’s death, Babylonian’s to destroy Jerusalem, Israel to return from Babylonian exile</td>
+                <td>Salvation is the overarching theme in the book of Isaiah. Other themes include judgment, holiness, punishment, captivity, the fall of the nation, comfort, hope, and salvation through the coming Messiah</td>
+            </tr>
+            <tr align="center">
+                <td>Jeremiah</td>
+                <td>2-8, 10-17, 20-23, 26, 31, 33, 35, 39-42, 44, 46-52</td>
+                <td>Jeremiah, Baruch, King Josiah, King Jehoiakim, Ebed-Melech, King Nebuchadnezzar, the Recabite people</td>
+                <td>Jeremiah is persecuted and suffers, Jerusalem sins and falls</td>
+                <td>Obedience is a key theme, because Jerusalem sinned, the nation was eventually destroyed because no one obeyed God</td>
+            </tr>
+            <tr align="center">
+                <td>Lamentations</td>
+                <td>2, 5</td>
+                <td>People of the City</td>
+                <td>God destroyed the city</td>
+                <td>God’s wrath and God’s mercies</td>
+            </tr>
+            <tr align="center">
+                <td>Ezekial</td>
+                <td>4-10, 12-16, 20-22</td>
+                <td>Ezekiel, Israel's leaders, Ezekiel's wife, and King Nebuchadnezzar</td>
+                <td>Judgement against Idolatry, Idolaters are killed, non-Godly people are condemned</td>
+                <td>Ezekial was called to be a “watchman for God” to warn everyone the dangers that came with committing idolatry</td>
+            </tr>
+            <tr align="center">
+                <td>Daniel</td>
+                <td>2-6, 10</td>
+                <td>Daniel, Nebuchadnezzar, God, Shadrach, Meshach, and Abednego</td>
+                <td>Daniel interprets Nebuchadnezzar’s dream, God saves Shadrach, Meshach, and Abednego from death in the furnace, Nebuchadnezzar praises God. Daniel interprets dreams, Daniel is thrown into the lion’s den, Daniel has visions</td>
+                <td>Only God can deliver you to safety</td>
+            </tr>
+            <tr align="center">
+                <td>Hosea</td>
+                <td>2-5, 9-11, 13-14</td>
+                <td>Hosea, Gomer, Jezreel, People of Israel</td>
+                <td>Broken marriage symbolizes broken covenant, Israel is unfaithful, and God is compassionate</td>
+                <td>Hosea taught that to love God is to love the neighbor and to refrain from doing evil. He also proclaimed that the love of gods other than the Lord led people to commit acts of injustice and oppression</td>
+            </tr>
+            <tr align="center">
+                <td>Joel</td>
+                <td>1-3</td>
+                <td>Joel</td>
+                <td>Joel prophesies the coming of a locust swarm, and foretells of an army from the North who will destroy their land, and begs the people to repent to God</td>
+                <td>God is just, punishing sin, but also merciful to those who repent</td>
+            </tr>
+            <tr align="center">
+                <td>Amos</td>
+                <td>2-5, 9</td>
+                <td>Amos</td>
+                <td>Amos preaches that Israel has committed the same sins as the neighboring countries, and is not better than them</td>
+                <td>God’s anger, Judgement, and Prophetic authority are all themes emphasized in Amos</td>
+            </tr>
+            <tr align="center">
+                <td>Obadiah</td>
+                <td>1</td>
+                <td>Obadiah¸ Lord</td>
+                <td>Pronounces judgement on Edom</td>
+                <td>The destructive power of pride is a theme found in Obadiah</td>
+            </tr>
+            <tr align="center">
+                <td>Jonah</td>
+                <td>1-4</td>
+                <td>Jonah, People of Nineveh</td>
+                <td>God commands Jonah and Jonah disobeys, God spares Nineveh</td>
+                <td>God has patience and mercy</td>
+            </tr>
+            <tr align="center">
+                <td>Micah</td>
+                <td>1-3, 5</td>
+                <td>Micah</td>
+                <td>Prophecy of Jesus Christ</td>
+                <td>God’s control and Justice are key themes to the story of Micah</td>
+            </tr>
+            <tr align="center">
+                <td>Nahum</td>
+                <td>1-3</td>
+                <td>Nahum</td>
+                <td>Invasion of Nineveh</td>
+                <td>God's wrath</td>
+            </tr>
+            <tr align="center">
+                <td>Habakkuk</td>
+                <td>1, 3</td>
+                <td>Habakkuk</td>
+                <td>None</td>
+                <td>God's power, the wicked will suffer, and the righteous will live by faith</td>
+            </tr>
+            <tr align="center">
+                <td>Zephaniah</td>
+                <td>1-3</td>
+                <td>Zephaniah</td>
+                <td>Judgement upon Judah</td>
+                <td>Seek the Lord</td>
+            </tr>
+            <tr align="center">
+                <td>Haggai</td>
+                <td>1-2</td>
+                <td>Haggai, Zerubbabel</td>
+                <td>The House of the Lord began Construction</td>
+                <td>God judges the unclean</td>
+            </tr>
+            <tr align="center">
+                <td>Zechariah</td>
+                <td>1-3, 9-14</td>
+                <td>Zechariah</td>
+                <td>Construction of the Temple</td>
+                <td>God rewards those who are obediant to him</td>
+            </tr>
+            <tr align="center">
+                <td>Malachi</td>
+                <td>1-4</td>
+                <td>Malachi</td>
+                <td>Israelites sin and disobey the covenant</td>
+                <td>God loves his people</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Back</td>
+                <td colspan="4">This section of the Bible is all about showing how God’s people have failed again and again but that he loves us so much that if we repent and ask for forgiveness, he grants it to us</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Forward</td>
+                <td colspan="4">With these being the last books of the Old Testament, God was showing his people how merciful he can be, now with the start of the New Testament or New Covenant/Promise we will see Jesus and how much God cares for us that he sent Jesus to live on this world</td>
+            </tr>
+            <tr align="center">
+                <td>Sources</td>
+                <td colspan="4">Esv.org, learnreligions.com, Wikipedia, Enter the Bible</td>
+            </tr>
+        </table>
+        </div>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,89 @@
+<html>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('acts.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 105% 105%;
+        }
+        body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: inherit;
+    background-size: inherit;
+    filter: blur(15px); /* Adjust the blur amount as needed */
+    z-index: -1;
+}
+    </style>
+        <div class="navbar">
+            <a href="homepage.html">Home</a>
+            <a class="active" a href="biblestoryline.html">Bible Storyline</a>
+            <a href="biblicalworldview.html">Biblical Worldview</a>
+            <a href="casestudy.html">Case Study</a>
+            <a href="Reflection.html">Reflection</a>
+            <a href="podcast.html">Podcast</a>
+        </div>
+        <br>
+    <body>
+        <div class="container">
+            <label for="Chart" style="font-size: 20px; color: white;">Explore Further</label>
+            <select id="Chart">
+                <option value="biblestoryline.html">Bible Storyline</option>
+                <option value="pentateuch.html">Pentateuch</option>
+                <option value="HistoricalBooks.html">Historical Books</option>
+                <option value="wisdomlit.html">Wisdom Literature</option>
+                <option value="propheticbooks.html">Prophetic Books</option>
+                <option value="gospels.html">Gospels</option>
+                <option value="acts.html">Acts</option>
+                <option value="epistles.html">Epistles</option>
+                <option value="revelation.html">Revelation</option>
+            </select>
+            <button id="goButton" style="font-size: 15px;">Go</button>
+            </div>
+            <script>
+              const dropdown = document.getElementById("Chart");
+              const goButton = document.getElementById("goButton");
+      
+              goButton.addEventListener("click", function() {
+                  const selectedValue = dropdown.value;
+                  if (selectedValue !== "") {
+                      window.location.href = selectedValue;
+                  }
+              });
+            </script>
+              <br>
+              <div class="actstext">
+        <table border="5">
+            <th align="center"; colspan="5">Acts</th>
+            <tr align="center">
+                <td>Book</td>
+                <td>Key Chapters</td>
+                <td>Main Characters</td>
+                <td>Main Events</td>
+                <td>Key Themes</td>
+            </tr>
+            <tr align="center">
+                <td>Acts</td>
+                <td>1-4, 6, 8-9, 11-12, 14, 16, 23, 26</td>
+                <td>Peter, James, John, Stephen, Philip, Paul, Ananias, Barnabas, Silas, James, Cornelius, Timothy, Titus, Lydia, Luke, Apollos, Felix, Festus, and Agrippa</td>
+                <td>Saul was persecuting Christians but was saved instead and became known as Paul</td>
+                <td>As more and more believe in the salvation of Jesus Christ, spread the word to others</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Back</td>
+                <td colspan="4">This section of the Bible shows how more and more people were being saved through Christ but that the road of being a Christian is not easy</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Foward</td>
+                <td colspan="4">In Acts, believers were being hunted down and persecuted, the Romans were not happy people were finding faith through Jesus compared to their gods</td>
+            </tr>
+            <tr align="center">
+                <td>Sources</td>
+                <td colspan="4">LearnReligions.com, ESV</td>
+            </tr>
+        </table>
+    </body>
+</html>

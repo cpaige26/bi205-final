@@ -1,0 +1,90 @@
+<html>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('revelation.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;
+        }
+        body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: inherit;
+    background-size: inherit;
+    filter: blur(10px); /* Adjust the blur amount as needed */
+    z-index: -1;
+}
+    </style>
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a class="active" a href="biblestoryline.html">Bible Storyline</a>
+        <a href="biblicalworldview.html">Biblical Worldview</a>
+        <a href="casestudy.html">Case Study</a>
+        <a href="Reflection.html">Reflection</a>
+        <a href="podcast.html">Podcast</a>
+    </div>
+    <br>
+    <body>
+        <div class="container">
+            <label for="Chart" style="font-size: 20px;">Explore Further</label>
+            <select id="Chart">
+                <option value="biblestoryline.html">Bible Storyline</option>
+                <option value="pentateuch.html">Pentateuch</option>
+                <option value="HistoricalBooks.html">Historical Books</option>
+                <option value="wisdomlit.html">Wisdom Literature</option>
+                <option value="propheticbooks.html">Prophetic Books</option>
+                <option value="gospels.html">Gospels</option>
+                <option value="acts.html">Acts</option>
+                <option value="epistles.html">Epistles</option>
+                <option value="revelation.html">Revelation</option>
+            </select>
+            <button id="goButton" style="font-size: 15px;">Go</button>
+            </div>
+            <script>
+              const dropdown = document.getElementById("Chart");
+              const goButton = document.getElementById("goButton");
+      
+              goButton.addEventListener("click", function() {
+                  const selectedValue = dropdown.value;
+                  if (selectedValue !== "") {
+                      window.location.href = selectedValue;
+                  }
+              });
+            </script>
+              <br>
+            <div class="revelationchart">
+        <table border="5">
+            <th align="center"; colspan="5">Revelation</th>
+            <tr align="center">
+                <td>Book</td>
+                <td>Key Chapters</td>
+                <td>Main Characters</td>
+                <td>Main Events</td>
+                <td>Key Themes</td>
+            </tr>
+            <tr align="center">
+                <td>Revelation</td>
+                <td>4-6, 8-10, 13-17, 19, 21-22</td>
+                <td>Jesus Christ, John the Apostle</td>
+                <td>John enters heaven, John sees the scroll and is told it can be opened by the Lion of the Tribe of Judah, the promise of a new heaven and Earth</td>
+                <td>God is sovereign, he controls the past, present, and future</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Back</td>
+                <td colspan="4">This book shows how God has promised to recreate Heaven and Earth when Jesus the Lion of the tribe of Judah opens the scroll and seven seals. It was always prophesied that sin would be no more, and this book shows it</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Foward</td>
+                <td colspan="4">The book of Revelation ends the Bible and is the story of how John is the only man who has ever entered Heaven alive. We can see from this book that the world is to be made new and mankind will be that of Adam and Eve before the fall</td>
+            </tr>
+            <tr align="center">
+                <td>Sources</td>
+                <td colspan="4">ESV Bible, learnreligions.com</td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>

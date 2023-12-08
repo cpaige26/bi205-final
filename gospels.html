@@ -1,0 +1,111 @@
+<html>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('birthofjesus.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;
+        }
+        body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: inherit;
+    background-size: inherit;
+    filter: blur(15px); /* Adjust the blur amount as needed */
+    z-index: -1;
+}
+    </style>
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a class="active" a href="biblestoryline.html">Bible Storyline</a>
+        <a href="biblicalworldview.html">Biblical Worldview</a>
+        <a href="casestudy.html">Case Study</a>
+        <a href="Reflection.html">Reflection</a>
+        <a href="podcast.html">Podcast</a>
+    </div>
+    <br>
+    <body>
+        <div class="container">
+            <label for="Chart" style="font-size: 20px; color: white;">Explore Further</label>
+            <select id="Chart">
+                <option value="biblestoryline.html">Bible Storyline</option>
+                <option value="pentateuch.html">Pentateuch</option>
+                <option value="HistoricalBooks.html">Historical Books</option>
+                <option value="wisdomlit.html">Wisdom Literature</option>
+                <option value="propheticbooks.html">Prophetic Books</option>
+                <option value="gospels.html">Gospels</option>
+                <option value="acts.html">Acts</option>
+                <option value="epistles.html">Epistles</option>
+                <option value="revelation.html">Revelation</option>
+            </select>
+            <button id="goButton" style="font-size: 15px;">Go</button>
+            </div>
+            <script>
+              const dropdown = document.getElementById("Chart");
+              const goButton = document.getElementById("goButton");
+      
+              goButton.addEventListener("click", function() {
+                  const selectedValue = dropdown.value;
+                  if (selectedValue !== "") {
+                      window.location.href = selectedValue;
+                  }
+              });
+            </script>
+              <br>
+              <div class="gospelstext">
+        <table border ="5">
+            <th align="center"; colspan="5">Gospels</th>
+            <tr align="center">
+                <td>Book</td>
+                <td>Key Chapters</td>
+                <td>Main Characters</td>
+                <td>Main Characters</td>
+                <td>Key Themes</td>
+            </tr>
+            <tr align="center">
+                <td>Matthew</td>
+                <td>5-7, 10, 13, 18, 24-25</td>
+                <td>Jesus Christ</td>
+                <td>Jesus the Messiah preaches and teaches right from wrong</td>
+                <td>Jesus’ biography and theology proving Jesus to be the savior</td>
+            </tr>
+            <tr align="center">
+                <td>Mark</td>
+                <td>5-6, 13-16</td>
+                <td>Jesus, the disciples, the Pharisees, and Pilate</td>
+                <td>Jesus continued teaching the people right from wrong and revealed himself as Son of God</td>
+                <td>Jesus the servant came to save mankind by coming to Earth</td>
+            </tr>
+            <tr align="center">
+                <td>Luke</td>
+                <td>2-4, 6, 8-9, 11, 15, 20, 22-24</td>
+                <td>Jesus, Zechariah, Elizabeth, John the Baptist, Mary, the disciples, Herod the Great, Pilate and Mary Magdalene</td>
+                <td>Jesus is arrested and put before Pilate. Jesus is tortured and killed. He is resurrected after three days</td>
+                <td>The perfect humanity of Jesus Christ</td>
+            </tr>
+            <tr align="center">
+                <td>John</td>
+                <td>3, 6, 11-12, 14, 18-20</td>
+                <td>Jesus, John the Baptist, Mary, Martha, Lazarus, The Disciples, Pilate</td>
+                <td>Jesus' Crucifixion</td>
+                <td>Jesus Christ is the word become flesh</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Back</td>
+                <td colspan="4">The Gospels provide us information about Jesus Christ and his life. From the Prophetic Books which mentioned a new covenant. Jesus Christ is the new covenant for all of mankind and how all men can be saved because Jesus took upon a flesh form died and was resurrected for us</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Foward</td>
+                <td colspan="4">The Gospels provide us with Jesus who is the new covenant and for the future how Christians should act and behave after seeing how Jesus saved us</td>
+            </tr>
+            <tr align="center">
+                <td>Sources</td>
+                <td colspan="4">Learnreligions.com, Esv Bible</td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>

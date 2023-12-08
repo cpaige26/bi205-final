@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('kingdavid.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;
+        }
+        body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    background-image: inherit;
+    background-size: inherit;
+    filter: blur(25px); /* Adjust the blur amount as needed */
+    z-index: -1;
+}
+    </style>
+
+<div class="navbar">
+    <a href="homepage.html">Home</a>
+    <a class="active" a href="biblestoryline.html">Bible Storyline</a>
+    <a href="biblicalworldview.html">Biblical Worldview</a>
+    <a href="casestudy.html">Case Study</a>
+    <a href="Reflection.html">Reflection</a>
+    <a href="podcast.html">Podcast</a>
+</div>
+    <body><br>
+        <div class="container">
+            <label for="Chart" style="font-size: 20px; color: white;">Explore Further</label>
+            <select id="Chart">
+                <option value="biblestoryline.html">Bible Storyline</option>
+                <option value="pentateuch.html">Pentateuch</option>
+                <option value="HistoricalBooks.html">Historical Books</option>
+                <option value="wisdomlit.html">Wisdom Literature</option>
+                <option value="propheticbooks.html">Prophetic Books</option>
+                <option value="gospels.html">Gospels</option>
+                <option value="acts.html">Acts</option>
+                <option value="epistles.html">Epistles</option>
+                <option value="revelation.html">Revelation</option>
+            </select>
+            <button id="goButton" style="font-size: 15px;">Go</button>
+            </div>
+            <script>
+              const dropdown = document.getElementById("Chart");
+              const goButton = document.getElementById("goButton");
+      
+              goButton.addEventListener("click", function() {
+                  const selectedValue = dropdown.value;
+                  if (selectedValue !== "") {
+                      window.location.href = selectedValue;
+                  }
+              });
+            </script>
+<br>
+            <div class="Historicalbookstext">
+        <table border="5">
+            <th align="center"; colspan="5">Historical Books</th>
+            <tr align="center">
+                <td>Book</td>
+                <td>Key Chapters</td>
+                <td>Main Characters</td>
+                <td>Main Events</td>
+                <td>Key Themes</td>
+            </tr>
+            <tr align="center">
+                <td>Joshua</td>
+                <td>1-6, 24</td>
+                <td>Joshua, Rahab, Achan, Eleazar, Phinehas</td>
+                <td>The Israelites enter the promised land, Redistribution of the land, and the renewal of the covenant with God</td>
+                <td>We can see God’s love for us in Joshua, by returning the Israelites to the Promised Land. The book of Joshua also shows that when the Israelites trusted God’s plan, they experienced success.</td>
+            </tr>
+            <tr align="center">
+                <td>Judges</td>
+                <td>1-3, 13-16, 17-21</td>
+                <td>Othniel, Ehud, Shamgar, Deborah, Gideon, Tola, Jair, Abimelech, Jephthah, Ibzan, Elon, Abdon, Samson, Delilah</td>
+                <td>Israelites in the Promised Land haven’t vanquished the Canaanites and are being influenced by them, worshipping fake Gods. New leadership is elected and there is peace until the Israelites sinned again and repeated the cycle</td>
+                <td>When the Israelites didn’t follow God’s plan exactly, he punished them until they (the Israelites) begged for mercy, and he sent 6 people (Judges) to realign the Israelites to his plan</td>
+            </tr>
+            <tr align="center">
+                <td>Ruth</td>
+                <td>1, 4</td>
+                <td>Naomi, Ruth, Boaz, Obed</td>
+                <td>Naomi and Ruth return to Bethlehem, Ruth works in Boaz’s fields so she and Naomi can eat. Boaz marries Ruth and their genealogy can be traced to King David</td>
+                <td>Faithfulness, Ruth was faithful to Naomi and to God. Kindness, Boaz was kind enough to allow Ruth to take from his fields so she and Naomi could survive</td>
+            </tr>
+            <tr align="center">
+                <td>1 Samuel</td>
+                <td>3-6, 8-12, 15-19, 23-26, 31</td>
+                <td>Eli, Hannah, Samuel, Saul, David, Goliath, Jonathan</td>
+                <td>Samuel was born to Hannah, the Lord calls to Samuel, Israelites go into battle against the Philistines and lose the Ark, the Ark is returned to Israel, Israel demands a king and Saul is anointed king, Saul turned his back to God’s orders, Samual then kills Agag and David is anointed king, David kills Goliath, Saul attempts to kill David, David flees but spares Saul twice, Saul commits suicide in battle against the Philistines after his sons were killed</td>
+                <td>God is sovereign: even though the Israelites wanted a man to be king the king would have to bow down to God. Every small thing can be part of God’s bigger picture. God looks at our hearts: both Saul and David sinned but, David was redeemed by God because he repented</td>
+            </tr>
+            <tr align="center">
+                <td>2 Samuel</td>
+                <td>1-2, 5, 6-8, 19, 23-24</td>
+                <td>David, Joab, Michal, Abner, Bathsheba, Nathan, Absalom</td>
+                <td>David is anointed King of Judah and Israel, God makes a covenant with David, David ruled over Israel administered justice and equity, David commits adultery with Bathsheba, David attempts to kill Uriah, Nathan rebukes David and David’s first son with Bethsheba dies, David’s children sinned and murdered each other, Absalom was killed, David pardons his enemies, David built an alter and offered burnt offerings to the Lord so that the plague over Israel could be averted</td>
+                <td>God creates a covenant through David to make a throne that would last forever, Repentance: David says “I have sinned” same words Saul and the people used. Reversal of a fortune, David initially followed God’s will and rules but then broke them and this showed how easy sinning once can send you in a downwards spiral of lies and sin.</td>
+            </tr>
+            <tr align="center">
+                <td>1 Kings</td>
+                <td>1-3, 8, 13-14, 16-18, 22</td>
+                <td>King David, King Solomon, Rehoboam, Jeroboam, Elijah, Ahab, and Jezebel</td>
+                <td>The end of David’s reign and the succession of his son, Solomon. Soloman married foreign women and the nation began to suffer, after Solomon more kings followed in suit worshipping idols and Israel became a divided nation</td>
+                <td>Idolatry destroys nations, because the monuments to Baal were never destroyed Israelites took to worshipping him over God. Prophets warn of God’s truth – his wrath of those who disobey him, but people and kings didn’t want to acknowledge their faults</td>
+            </tr>
+            <tr align="center">
+                <td>2 Kings</td>
+                <td>1-3, 5, 7, 9, 12, 19-20, 25</td>
+                <td>Ahaziah, Elijah, Elisha, Jehoshaphat, King Hezekiah, Jehu, Manasseh, Josiah</td>
+                <td>Elijah enters heaven, Elisha raises the dead son, Elisha purifies a deadly soup, Naaman is healed of leprosy, Kings upon kings rule the Israelites, Hezekiah repents, Babylon lays siege to Judah</td>
+                <td>2nd Kings is extension to 1st Kings but also Judges, which all show how men have sinned against God and how the nation of Israel has suffered because the Kings have not kept God number 1</td>
+            </tr>
+            <tr align="center">
+                <td>1 Chronicles</td>
+                <td>10, 11, 13, 15, 17-19, 29</td>
+                <td>David, Solomon</td>
+                <td>David brought the ark back, Philistines are defeated, Ammonites disgrace David’s men and are killed, Solomon is anointed King, David dies</td>
+                <td>The Davidic covenant: God’s promise to preserve David’s line of descendants, The People of Israel: the book begins with 9 chapters of descendants and genealogy</td>
+            </tr>
+            <tr align="center">
+                <td>2 Chronicles</td>
+                <td>3-7, 11, 12, 29, 33, 36</td>
+                <td>Solomon, the Queen of Sheba, Rehoboam, Asa, Jehoshaphat, Ahab, Jehoram, Joash, Uzziah, Ahaz, Hezekiah, Manasseh, Josiah</td>
+                <td>Kings strayed from God and led Israel to its demise</td>
+                <td>God established his temple with David and Solomon, God’s forgiveness is everlasting</td>
+            </tr>
+            <tr align="center">
+                <td>Ezra</td>
+                <td>1-3, 7, 10</td>
+                <td>Cyrus, Ezra</td>
+                <td>The Israelites return to Judah and start to rebuild God’s temple</td>
+                <td>Building up for God</td>
+            </tr>
+            <tr align="center">
+                <td>Nehemiah</td>
+                <td>5-6, 9-10, 13</td>
+                <td>Nehemiah, Ezra, King Artaxerxes, Sanballat the Horonite, Tobiah the Ammonite, Geshem the Arab, and the people of Jerusalem</td>
+                <td>The Jews rebuilt the walls around Jerusalem, Ezra read the law and people repented </td>
+                <td>God answers prayers: gave Nehemiah what he needed for rebuilding the wall, people must work together and share resources for the Church to flourish</td>
+            </tr>
+            <tr align="center">
+                <td>Esther</td>
+                <td>3-4, 8-9</td>
+                <td>Esther, King Xerxes, Mordecai, Haman</td>
+                <td>Esther learns of plans to kill every Jew in the kingdom and warns the Jews and then begs to the King to spare them</td>
+                <td>We can trust God to always be looking out for us</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Back</td>
+                <td colspan="4">The Historical Books pick up where the Pentateuch left off, Joshua tells us the story of how the Israelites were finally able to enter the Promise Land, but following the Historical Books, we can see time and time again that the Israelites would just become wicked and sin against God. God would then intervene; the people would repent, and this cycle continues</td>
+            </tr>
+            <tr align="center">
+                <td>Looking Foward</td>
+                <td colspan="4">This section of the Bible reinforces that no matter how many bad decisions, ones that are ungodly God will always be loving and caring enough to save those who repent. Also, the Historical Books introduce God’s covenant with David whom if you follow the line of descendants eventually leads to Jesus Christ</td>
+            </tr>
+            <tr align="center">
+                <td>Sources</td>
+                <td colspan="4">BibleProject, LearnReligions, EntertheBible, ESV Bible</td>
+            </tr>
+        </table>
+        </div>
+        </body>
+</html>

@@ -1,0 +1,25 @@
+object {
+    width: 200vh;
+    min-width: max-content;
+    height: 100vh;
+    min-height: max-content;
+}
+
+
+.container {
+    text-align: center;
+    size: 100px;
+    
+}
+
+.redemtionchart {
+    table-layout: fixed;
+}
+
+.pentateuchtext {
+    color: white;
+}
+
+.epistleschart {
+    color: white;
+}
